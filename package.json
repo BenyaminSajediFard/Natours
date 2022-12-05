@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for natours project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenyaminSajediFard/Natours.git"
+  },
+  "author": "Benyamin Sajedi Fard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenyaminSajediFard/Natours/issues"
+  },
+  "homepage": "https://github.com/BenyaminSajediFard/Natours#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
