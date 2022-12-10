@@ -1,17 +1,17 @@
 {
   "name": "natours",
-  "version": "1.0.0",
-  "description": "Landing page for natours project",
+  "version": "0.0.1",
+  "description": "The landing page for natours",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.sass css/style.css -w"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BenyaminSajediFard/Natours.git"
   },
   "author": "Benyamin Sajedi Fard",
-  "license": "ISC",
+  "license": "GPL-2.0-or-later",
   "bugs": {
     "url": "https://github.com/BenyaminSajediFard/Natours/issues"
   },
