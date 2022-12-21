@@ -1,0 +1,73 @@
+.footer
+    color: $color-grey--light-1
+    background-color: $color-grey--dark-2
+    padding: 8rem 0
+    font-size: 1.4rem
+
+    &__logo-box
+        text-align: center
+
+    &__logo
+        width: 15rem
+        height: auto
+
+    &__navigation
+        display: inline-block
+        border-top: 1px solid $color-grey
+        padding-top: 2rem
+
+    &__list
+        text-align: center
+        list-style: none
+
+    &__item
+        display: inline-block
+
+        &:not(:last-child)
+            margin-right: 1.5rem
+
+    &__link
+        padding: 1.5rem 0
+        transition: all 200ms
+
+        &--copy
+            transition: all 250ms
+
+            &:link, &:visited
+                text-decoration: none
+                color: inherit
+
+            &:hover
+                color: $color-primary
+                text-shadow: 0 .8rem 2rem rgba($color-primary--light, 0.4)
+
+        &:link, &:visited
+            display: inline-block
+            text-decoration: none
+            text-transform: uppercase
+            letter-spacing: .1rem
+            color: inherit
+
+        &:hover, &:active
+            color: $color-primary
+            text-shadow: 0 .8rem 2rem rgba($color-primary--light, 0.4)
+            transform: translateY(-1.5rem) scale(1.2)
+
+    &__copyright
+        margin-left: 3.5rem
+        line-height: 1.8
+        display: inline-block
+        border-top: 1px solid $color-grey
+        padding-top: 3.5rem
+
+    &__made
+        text-align: center
+        font-size: $default-size
+        text-transform: uppercase
+        font-weight: 600
+        background-image: linear-gradient(to right, $color-primary--light, $color-primary--shade)
+        -webkit-background-clip: text
+        color: transparent
+
+        & span
+            color: initial

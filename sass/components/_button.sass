@@ -1,6 +1,6 @@
 .btn
-    &:link, &:visited
-        font-size: 1.6rem
+    &, &:link, &:visited
+        font-size: $default-size
         font-weight: 500
         text-transform: uppercase
         text-decoration: none
@@ -11,6 +11,11 @@
         transition: all 300ms
         position: relative
 
+        // Changes for the <button> el
+        font-family: inherit
+        border: none
+        cursor: pointer
+
     &:hover
         transform: translateY(-3px)
         box-shadow: 0 1rem 2rem rgba($color-black, 0.25)
@@ -19,13 +24,24 @@
             transform: scaleX(1.4) scaleY(1.6)
             opacity: 0
 
-    &:active
+    &:active, &:focus
+        outline: none
         transform: translateY(-1px)
         box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2)
 
     &--white
         color: $color-grey
         background-color: $color-white
+
+        &::after
+            background-color: rgba($color-white, 0.7)
+
+    &--green
+        color: $color-white
+        background-color: $color-primary
+
+        &::after
+            background-color: rgba($color-primary, 0.7)
 
     &::after
         content: ""
@@ -39,8 +55,29 @@
         top: 0
         left: 0
         z-index: -1
-        background-color: rgba($color-white, 0.7)
 
     &--animated
         animation: moveInUp 1s ease-out 750ms
         animation-fill-mode: backwards
+
+.btn-text
+    &:link, &:visited
+        display: inline-block
+        text-decoration: none
+        font-size: $default-size
+        color: $color-primary--shade
+        border-bottom: 1px solid $color-primary
+        padding: 3px
+        transition: all 250ms
+
+    &:hover
+        background-color: $color-primary
+        color: $color-white
+        border-top: 1px solid $color-primary
+
+        transform: translateY(-2px)
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.2)
+
+    &:active
+        transform: translateY(0px)
+        box-shadow: 0 .5rem 1rem rgba($color-black, 0.2)
