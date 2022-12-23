@@ -16,6 +16,68 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        &nbsp;
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="navigation__button-icon navigation__button-icon--close"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 9h16.5m-16.5 6.75h16.5"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="navigation__button-icon navigation__button-icon--open"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>01</span>About Natours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>02</span>Your Benefits</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>03</span>Popular Tours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span>Book Now</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="header__logo-box">
         <img
@@ -69,6 +131,7 @@
         <div class="col-3-of-4">col 3 of 4</div>
       </div>
     </section>-->
+
     <main>
       <section class="section-about">
         <div class="u-center-text u-mrgn-btm--big">
@@ -128,7 +191,8 @@
                 explore the world
               </h3>
               <p class="feature-box__text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem,
+                ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
           </div>
@@ -166,8 +230,8 @@
         </div>
       </section>
 
-      <section class="section-tours">
-        <div class="u-center-text u-mrgn-btm--big">
+      <section class="section-tours" id="section-tours">
+        <div class="u-center-text u-mrgn-btm--big" id="tours-head">
           <h2 class="heading-secondary">most wanted tours!</h2>
         </div>
 
@@ -197,7 +261,7 @@
                     only <br />
                     <span class="card__price-value">&dollar;297</span>
                   </p>
-                  <a href="#" class="btn btn--white">book now!</a>
+                  <a href="#popup" class="btn btn--white">book now!</a>
                 </div>
               </div>
             </div>
@@ -228,7 +292,7 @@
                     only <br />
                     <span class="card__price-value">&dollar;497</span>
                   </p>
-                  <a href="#" class="btn btn--white">book now!</a>
+                  <a href="#popup" class="btn btn--white">book now!</a>
                 </div>
               </div>
             </div>
@@ -259,7 +323,7 @@
                     only <br />
                     <span class="card__price-value">&dollar;897</span>
                   </p>
-                  <a href="#" class="btn btn--white">book now!</a>
+                  <a href="#popup" class="btn btn--white">book now!</a>
                 </div>
               </div>
             </div>
@@ -391,7 +455,7 @@
 
                 <div class="form__group">
                   <button class="btn btn--green" type="submit">
-                    Next step &rarr;
+                    Next step &rarrw;
                   </button>
                 </div>
               </form>
@@ -443,7 +507,7 @@
               >Benyamin Sajedi Fard</a
             >
             for testing and practice case, under MIT license. Made possible with
-            CSS3 and Sass technologies.<br />Copyright &copy; by
+            HTML, CSS3 and Sass.<br />Copyright &copy; by
             <a
               class="footer__link--copy"
               href="http://netlify.noobdev.app"
@@ -456,8 +520,37 @@
         </div>
       </div>
       <p class="footer__made u-mrgn-top--medium">
-        made with <span>❤️</span> in iran
+        Made with <span>❤️</span> in Iran
       </p>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img class="popup__img" src="img/nat-8.jpg" alt="Tour photo" />
+          <img class="popup__img" src="img/nat-9.jpg" alt="Tour photo" />
+        </div>
+        <div class="popup__right">
+          <a href="#tours-head" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-mrgn-btm--small">Start booking now</h2>
+          <h3 class="heading-tertiary u-mrgn-btm--small">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="popup__text u-mrgn-btm--medium">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam velit
+            dolorem id cupiditate illo nemo fugit quis, voluptatum iure
+            doloremque laborum necessitatibus, expedita minus nam magnam itaque,
+            ab modi eligendi. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Sed tenetur illo, Doloribus mollitia quam quos sequi natus.
+            Esse dicta quaerat maiores quis optio, odit voluptatum. Labore iure
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            eligendi quo, eos officia possimus assumenda ad corporis nam ipsam
+            quia pariatur aperiam repellat omnis quod optio dolorum sed
+            recusandae nesciunt.
+          </p>
+          <a href="#" class="btn btn--green">Join the tour</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
